@@ -79,7 +79,7 @@ async function init() {
         if (process.platform === 'win32') {
             const lockFilePath = path.join(__dirname, 'node_modules', 'docker-modem', 'lib', 'docker_modem_fix.lock');
             const modemPath = path.join(__dirname, 'node_modules', 'docker-modem', 'lib', 'modem.js');
-            const modemUrl = 'https://raw.githubusercontent.com/achul123/docker-modem/refs/heads/master/lib/modem.js';
+            const modemUrl = 'https://raw.githubusercontent.com/WorldCraftlabs/docker-modem/refs/heads/main/lib/modem.js';
         
             if (!fs.existsSync(lockFilePath)) {
                 log.info('Fixing docker-modem for windows...');
